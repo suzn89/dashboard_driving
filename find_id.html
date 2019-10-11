@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>지능형자동차부품진흥원-자율주행통합관제센터</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/layout.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1 class="header__logo"><a href="#"><img src="images/logo.png" alt="메인으로이동"></a></h1>
+    <nav class="header__nav">
+      <ul>
+        <li class="active"><a href="#">기업관리</a></li>
+        <li><a href="#">분류코드관리</a></li>
+        <li><a href="#">차량관리</a></li>
+        <li><a href="#">계측기관리</a></li>
+        <li><a href="#">시험관리</a></li>
+        <li><a href="#">수집관리</a></li>
+        <li><a href="#">연계 및 통신</a></li>
+      </ul>
+    </nav>
+    <ul class="header__quick">
+      <li class="header__monitoring"><a href="#" class="normal">모니터링</a></li>  <!-- 클릭시 a에 normal 클래스 active로 변경-->
+      <li class="header__setting"><a href="#" class="normal">설정</a></li>
+    </ul>
+  </header> <!-- // header end -->
+
+  <div class="left">
+    <h2 class="left__title">회원정보</h2>
+    <div class="left__2depth">
+      <li class="on"><a href="#">아이디찾기</a></li> <!-- 메뉴 선택시 li에 on클래스 추가-->      
+      <li><a href="#">비밀번호찾기</a></li>
+    </div>
+  </div> <!-- // left end -->
+
+  <div class="right">
+    <div class="right__content">
+      <h3 class="right__title">
+        아이디 찾기
+        <span class="right__titledesc">
+          회원정보에 등록한 정보와 입력한 정보가 같아야 아이디를 확인하실 수 있습니다.
+        </span>
+      </h3>
+      <div class="findinfo align--center">
+        <span><img src="/images/find_id.png" alt=""></span>
+        <div class="row2">
+          <div class="input__wrap">
+            <label for="idchk">성명</label>
+            <input type="text" id="idchk">
+          </div>
+          <div class="input__wrap">
+            <label for="birthchk">생년월일</label>
+            <input type="text" id="birthchk" placeholder="예) 19650504">
+          </div>
+        </div>
+      </div>
+      <div class="button align--center">
+        <a href="#" class="btn btn--primary">아이디찾기</a>
+      </div> <!-- // button end -->
+    </div> <!-- // right__content end -->
+  </div> <!-- // right end -->
+
+</div> <!-- // wrap end -->
+</body>
+</html>

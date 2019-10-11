@@ -13,6 +13,7 @@ $contentBorder:#E7ECF0;
 $titleDesc: #B1BDC5;
 $secondaryColor: #6E8699;
 
+$textNormal: #5b5c61;
 
 /* Mixin */
 @mixin boxRound4 {
@@ -331,5 +332,37 @@ body {
         border: 1px solid #EAECF1;
       }
     }
+    .complate {
+      margin: 40px 0;
+      .compmessage {
+        margin-top: 30px;
+        font-size: 22px;
+        margin-bottom: 15px;
+        span {          
+          font-weight: 700;
+          color: $primaryColor;
+        }
+      }
+    }
+    .findinfo {
+      padding: 30px 0;
+      > span {
+        display:inline-block;        
+        padding: 30px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: left;        
+      }
+    }
+    .row2 {
+      width: 100%;
+      padding: 20px 0;
+      background: #f1f4f6;
+    }
   }
+}
+.input__wrap + .input__wrap {
+  margin-top: 10px;
 }

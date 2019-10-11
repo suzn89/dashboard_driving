@@ -359,4 +359,44 @@ body {
   padding: 15px;
   border: 1px solid #EAECF1;
 }
+
+.wrap .right .complate {
+  margin: 40px 0;
+}
+
+.wrap .right .complate .compmessage {
+  margin-top: 30px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.wrap .right .complate .compmessage span {
+  font-weight: 700;
+  color: #0064b0;
+}
+
+.wrap .right .findinfo {
+  padding: 30px 0;
+}
+
+.wrap .right .findinfo > span {
+  display: inline-block;
+  padding: 30px;
+}
+
+.wrap .right .findinfo label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+.wrap .right .row2 {
+  width: 100%;
+  padding: 20px 0;
+  background: #f1f4f6;
+}
+
+.input__wrap + .input__wrap {
+  margin-top: 10px;
+}
 /*# sourceMappingURL=layout.css.map */

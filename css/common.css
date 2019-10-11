@@ -154,18 +154,31 @@
 
 .button .btn--secondary {
   background: #ffffff;
-  border-color: #6E8699;
-  color: #6E8699;
+  border-color: #6e8699;
+  color: #6e8699;
 }
 
 .button .btn--secondary:hover {
-  background: #6E8699;
-  border-color: #6E8699;
+  background: #6e8699;
+  border-color: #6e8699;
   color: #ffffff;
 }
 
 .button .btn + .btn {
   margin-left: 15px;
+}
+
+.blind {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  display: block;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  font-size: 1px;
+  line-height: 0;
 }
 
 .align--right {
@@ -178,5 +191,144 @@
 
 .align--center {
   text-align: center;
+}
+
+/* table + input */
+.table_type1 tbody {
+  width: 100%;
+  border-top: 1px solid #dae0e4;
+}
+
+.table_type1 tr {
+  border-bottom: 1px solid #dae0e4;
+}
+
+.table_type1 th {
+  padding: 0px 15px 0;
+  min-height: 74px;
+  text-align: left;
+  vertical-align: middle;
+  color: #5b5c61;
+  background: #f1f4f6;
+}
+
+.table_type1 td {
+  display: block;
+  padding: 14px 0 14px 17px;
+  min-height: 74px;
+}
+
+.input__wrap {
+  min-height: 44px;
+  line-height: 44px;
+}
+
+.input__wrap input[type='text'], .input__wrap input[type='password'], .input__wrap select {
+  display: inline-block;
+  padding: 0 10px;
+  width: 252px;
+  height: 44px;
+  border: 1px solid #c9cdd3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #5b5c61;
+}
+
+.input__wrap input[type='text'] + .btn, .input__wrap input[type='password'] + .btn, .input__wrap select + .btn {
+  margin-left: 5px;
+}
+
+.input__wrap .btn {
+  display: inline-block;
+  min-width: 85px;
+  height: 44px;
+  padding: 0 20px;
+  line-height: 44px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.input__wrap .type1 {
+  display: inline-block;
+  color: #ffffff;
+  background: #0064b0;
+}
+
+.input__wrap .refer {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 13px;
+  color: #b7bbc5;
+  letter-spacing: -0.005em;
+}
+
+.input__wrap input[type='password'].match {
+  border: 1px solid #5fb8a0;
+}
+
+.input__wrap .match + .refer {
+  color: #5fb8a0;
+}
+
+.input__wrap input[type='password'].discor {
+  position: relative;
+  padding-right: 20px;
+  border: 1px solid #f6697f;
+}
+
+.input__wrap .discor + .refer {
+  color: #f6697f;
+}
+
+.input__wrap .rdibox input[type=radio] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.input__wrap .rdibox input[type=radio] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  min-height: 30px;
+  line-height: 30px;
+  background: url("/images/radio.png") no-repeat;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666666;
+}
+
+.input__wrap .rdibox input[type=radio].design + label {
+  padding-left: 30px;
+  min-height: 20px;
+  line-height: 20px;
+  background: url("/convention/html/bing/images/common/ico_radio02_off.png") no-repeat;
+  color: #222222;
+}
+
+.input__wrap .rdibox .checked input[type=radio] + label {
+  background: url("/convention/html/bing/images/common/ico_radio_on.png") no-repeat;
+  color: #ec1d25;
+  font-weight: 500;
+}
+
+.input__wrap .rdibox .checked input[type=radio].design + label {
+  background: url("/convention/html/bing/images/common/ico_radio02_on.png") no-repeat;
+  color: #222222;
+  font-weight: 300;
+}
+
+.input__wrap .rdibox .radio_area + .radio_area {
+  margin-left: 20px;
+}
+
+.input__wrap .inputbox__checkbox + .inputbox__checkbox {
+  margin-left: 40px;
 }
 /*# sourceMappingURL=common.css.map */
