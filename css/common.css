@@ -1,3 +1,5 @@
+/* Color theme */
+/* Mixin */
 /* Font */
 /* noto-sans-kr-300 - latin_korean */
 @font-face {
@@ -24,7 +26,7 @@
 /* noto-sans-kr-500 - latin_korean */
 @font-face {
   font-family: 'Noto Sans KR';
-  font-style: normal;
+  font-style: bold;
   font-weight: 500;
   src: url("../fonts/noto-sans-kr-v12-latin_korean-500.eot");
   /* IE9 Compat Modes */
@@ -120,5 +122,61 @@
 
 .inputbox .inputbox__checkbox + .inputbox__checkbox {
   margin-left: 40px;
+}
+
+/* buttons */
+.button {
+  margin-top: 10px;
+}
+
+.button .btn {
+  display: inline-block;
+  min-width: 85px;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 39px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.button .btn--primary {
+  background: #0064b0;
+  border-color: #0064b0;
+  color: #ffffff;
+}
+
+.button .btn--primary:hover {
+  background: #005ea5;
+  border-color: #005ea5;
+}
+
+.button .btn--secondary {
+  background: #ffffff;
+  border-color: #6E8699;
+  color: #6E8699;
+}
+
+.button .btn--secondary:hover {
+  background: #6E8699;
+  border-color: #6E8699;
+  color: #ffffff;
+}
+
+.button .btn + .btn {
+  margin-left: 15px;
+}
+
+.align--right {
+  text-align: right;
+}
+
+.align--left {
+  text-align: left;
+}
+
+.align--center {
+  text-align: center;
 }
 /*# sourceMappingURL=common.css.map */
