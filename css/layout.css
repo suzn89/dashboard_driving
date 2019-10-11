@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* Color theme */
+/* Mixin */
+/* 로그인화면 */
+.login__wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1600px;
+  min-height: 900px;
+  background: url(/images/login_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.login__wrap .loginbox {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  margin-top: -250px;
+  width: 460px;
+  color: #ffffff;
+}
+
+.login__wrap .loginbox__logo {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.login__wrap .loginbox .btn_login {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  line-height: 60px;
+  border-radius: 4px;
+  background: #0064B0;
+}
+
+.login__wrap .loginbox .btn_login:hover {
+  background: #005EA5;
+}
+
+.login__wrap .loginbox .btn_login input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.login__wrap .loginbox__ipt {
+  padding: 15px 0;
+  border-bottom: 1px solid #8E999E;
+}
+
+.login__wrap .loginbox__ipt label {
+  display: inline-block;
+  width: 100px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login__wrap .loginbox__ipt input {
+  background: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.login__wrap .loginbox .inputbox__checkbox label span {
+  color: #AAAAAB;
+}
+
+.login__wrap .loginbox__info {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login__wrap .loginbox__info .link_find {
+  display: inline-block;
+  color: #6B727E;
+}
+
+.login__wrap .loginbox__info a {
+  display: inline-block;
+  position: relative;
+}
+
+.login__wrap .loginbox__info a + a {
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
+.login__wrap .loginbox__info a + a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -5.5px;
+  width: 1px;
+  height: 11px;
+  background-color: #6B727E;
+}
+/*# sourceMappingURL=layout.css.map */
