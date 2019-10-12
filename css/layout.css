@@ -309,6 +309,7 @@ body {
   overflow: hidden;
   width: 100%;
   padding: 24px;
+  margin-bottom: 20px;
   background: #ffffff;
   border: 1px solid #E7ECF0;
 }
@@ -394,6 +395,61 @@ body {
   width: 100%;
   padding: 20px 0;
   background: #f1f4f6;
+}
+
+.wrap .right .tablewrap table {
+  border-top: 2px solid #5b5c61;
+}
+
+.wrap .right .tablewrap tbody {
+  width: 100%;
+  border-top: 1px solid #dae0e4;
+}
+
+.wrap .right .tablewrap tr {
+  border-bottom: 1px solid #dae0e4;
+}
+
+.wrap .right .tablewrap tr:hover td {
+  background: #F9FBFC;
+}
+
+.wrap .right .tablewrap th {
+  padding: 8px 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #5b5c61;
+  background: #f1f4f6;
+}
+
+.wrap .right .tablewrap td {
+  text-align: center;
+  padding: 8px 10px;
+  color: #6b6c70;
+}
+
+.wrap .right .tablewrap td .popup {
+  color: #1b7dc8;
+  text-decoration: underline;
+}
+
+.wrap .right .tablewrap .button {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wrap .right .tablewrap .input__form input[type='checkbox'] + label {
+  display: inline-block;
+  height: 30px;
+  line-height: 39px;
+  padding: 0 0 0 18px;
+  font-size: 15px;
+  background: url(../images/checkbox.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.wrap .right .tablewrap .input__form input[type='checkbox']:checked + label {
+  background: url(../images/checkbox_on.png) no-repeat left center;
 }
 
 .input__wrap + .input__wrap {
