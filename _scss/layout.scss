@@ -391,9 +391,15 @@ body {
           color: $leftTitle;
           text-decoration: underline;
         }
-        
+        .use {
+          color:#5FB8A0;
+        }
+        .useno {
+          color: #F6697F;
+        }
       }
       .button {
+        overflow: hidden;
         margin-top: 0;
         margin-bottom: 10px;
       }

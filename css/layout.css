@@ -433,7 +433,16 @@ body {
   text-decoration: underline;
 }
 
+.wrap .right .tablewrap td .use {
+  color: #5FB8A0;
+}
+
+.wrap .right .tablewrap td .useno {
+  color: #F6697F;
+}
+
 .wrap .right .tablewrap .button {
+  overflow: hidden;
   margin-top: 0;
   margin-bottom: 10px;
 }

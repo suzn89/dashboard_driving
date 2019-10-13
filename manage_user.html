@@ -311,20 +311,44 @@
     </div>
     <div class="layerpopup__content">
       <div class="item">
-        <div class="input__form col2">
+        <div class="input__form col2 etc_inp">
           <label for="name" class="form_tit bullet">아이디</label>
+          <input type="text" id="name" class="idinput" style="width: 180px;">
+          <button class="search">중복체크</button>
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">한글이름</label>
           <input type="text" id="name">
         </div>
         <div class="input__form col2">
-          <label for="name" class="form_tit">대표자명</label>
+          <label for="name" class="form_tit">영문이름</label>
           <input type="text" id="name">
         </div>
         <div class="input__form col2">
-          <label for="name" class="form_tit">사업자번호</label>
+          <span class="form_tit">직책명</span>
+          <select name="" id="" title="해당항목선택">
+            <option value="">선택 1</option>
+            <option value="">선택 2</option>
+            <option value="">선택 3</option>
+          </select>   
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">기업명</label>
           <input type="text" id="name">
         </div>
         <div class="input__form col2">
-          <label for="name" class="form_tit">법인번호</label>
+          <span class="form_tit">성별</span>
+          <input type="radio" name="radio1" id="radio1" checked>
+          <label for="radio1">남성</label>
+          <input type="radio" name="radio1" id="radio2">
+          <label for="radio2">여성</label>
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">비밀번호</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">비밀번호확인</label>
           <input type="text" id="name">
         </div>
         <div class="input__form col2">
@@ -332,15 +356,15 @@
           <input type="text" id="name">
         </div>
         <div class="input__form col2">
+          <label for="name" class="form_tit">휴대폰번호</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">이메일</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
           <label for="name" class="form_tit">팩스번호</label>
-          <input type="text" id="name">
-        </div>
-        <div class="input__form col2">
-          <label for="name" class="form_tit">업태</label>
-          <input type="text" id="name">
-        </div>
-        <div class="input__form col2">
-          <label for="name" class="form_tit">종목</label>
           <input type="text" id="name">
         </div>
         <div class="input__form etc_inp">
@@ -350,13 +374,17 @@
           <input type="text" id="">
           <input type="text" id="" placeholder="상세주소">
         </div>
+        
         <div class="input__form col2">
-          <span class="form_tit">사용여부</span>
-          <input type="checkbox" name="" id="checkbox" checked>
-          <label for="checkbox">사용</label>
+          <span class="form_tit">권한</span>
+          <select name="" id="" title="해당항목선택">
+            <option value="">선택 1</option>
+            <option value="">선택 2</option>
+            <option value="">선택 3</option>
+          </select>   
         </div>
         <div class="input__form col2">
-          <span class="form_tit">사업구분</span>
+          <span class="form_tit">로그인인증</span>
           <select name="" id="" title="해당항목선택">
             <option value="">선택 1</option>
             <option value="">선택 2</option>

@@ -206,6 +206,18 @@
   float: right;
 }
 
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
 /* table + input */
 .table_type1 tbody {
   width: 100%;
@@ -508,14 +520,15 @@
 }
 
 .layerpopup .input__form input[type='text']:disabled {
-  background: #EEF3F5;
-  color: #BEC1C7;
+  background: #eef3f5;
+  color: #bec1c7;
 }
 
 .layerpopup .input__form.col2 {
   width: calc(50% - 8px);
   margin-right: 6px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .layerpopup .etc_inp button + input {
@@ -535,17 +548,17 @@
   margin-left: 5px;
   height: 40px;
   padding: 0 10px;
-  background: #0064b0;
+  background: #6e8699;
   color: #ffffff;
 }
 
 .layerpopup .input__form {
+  width: 100%;
   display: inline-block;
   position: relative;
 }
 
-.layerpopup .input__form input[type='checkbox'],
-.layerpopup .input__form input[type='radio'] {
+.layerpopup .input__form input[type='checkbox'], .layerpopup .input__form input[type='radio'] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -559,6 +572,7 @@
   height: 40px;
   line-height: 39px;
   padding: 0 0 0 25px;
+  margin-right: 10px;
   font-size: 15px;
   background: url(../images/checkbox.png) no-repeat left center;
   cursor: pointer;
@@ -571,8 +585,9 @@
 .layerpopup .input__form input[type='radio'] + label {
   display: inline-block;
   height: 40px;
-  line-height: 21px;
+  line-height: 39px;
   padding: 0 0 0 25px;
+  margin-right: 10px;
   font-size: 15px;
   background: url(../images/radio.png) no-repeat left center;
   cursor: pointer;
@@ -615,9 +630,60 @@
   display: none;
 }
 
+.layerpopup .input__form.list {
+  background: #ffffff;
+  border: 1px solid #c9cdd3;
+  padding: 0px;
+  margin-top: 10px;
+  height: 120px;
+  overflow-y: scroll;
+}
+
+.layerpopup .input__form.list h5 {
+  background: #e7ecf0;
+  padding: 10px;
+  color: #6e8699;
+  font-size: 15px;
+}
+
+.layerpopup .input__form.list ul {
+  padding: 0 10px;
+}
+
+.layerpopup .input__form.list ul li {
+  overflow: hidden;
+  width: 100%;
+  padding: 5px 10px;
+  border-bottom: 1px solid #eef3f5;
+  font-size: 13px;
+  color: #6e8699;
+}
+
+.layerpopup .input__form.list ul li dt {
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+  font-weight: 700;
+}
+
+.layerpopup .input__form.list ul li dd {
+  float: left;
+  width: calc(100% - 115px);
+  line-height: 130%;
+}
+
 .layerpopup.style1 {
   width: 600px;
   background: #f9fbfc;
+}
+
+.layerpopup.style2 {
+  width: 450px;
+  background: #f9fbfc;
+}
+
+.layerpopup.style2 .input__form {
+  width: 100%;
 }
 
 .mask {
@@ -662,8 +728,8 @@
 }
 
 .right .input__form input[type='text']:disabled {
-  background: #EEF3F5;
-  color: #BEC1C7;
+  background: #eef3f5;
+  color: #bec1c7;
 }
 
 .right .input__form.col2 {
@@ -674,6 +740,12 @@
 
 .right .input__form.col3 {
   width: calc(25% - 8px);
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.right .input__form.col4 {
+  width: calc(24% - 8px);
   margin-right: 6px;
   display: inline-block;
 }
@@ -695,7 +767,7 @@
   margin-left: 5px;
   height: 40px;
   padding: 0 10px;
-  background: #0064b0;
+  background: #283139;
   color: #ffffff;
 }
 
@@ -704,8 +776,7 @@
   position: relative;
 }
 
-.right .input__form input[type='checkbox'],
-.right .input__form input[type='radio'] {
+.right .input__form input[type='checkbox'], .right .input__form input[type='radio'] {
   position: absolute;
   width: 1px;
   height: 1px;
