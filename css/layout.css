@@ -200,6 +200,10 @@ body {
   color: #686868;
 }
 
+.wrap .header__quick li a.active {
+  color: #0064b0;
+}
+
 .wrap .header__quick li + li {
   margin-left: 30px;
 }

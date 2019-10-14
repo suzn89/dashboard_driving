@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>지능형자동차부품진흥원-자율주행통합관제센터</title>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 <div class="wrap">
@@ -117,7 +117,8 @@
               <td>
                 <div class="input__wrap">
                   <label for="birth" class="blind">생년월일</label>
-                  <input type="text" id="birth"> 
+                  <input type="text" id="birth">
+                  <p class="refer">* 예 : 19830715</p>
                 </div>
               </td>
             </tr>
@@ -125,14 +126,67 @@
               <th scope="row">성별</th>
               <td>
                 <div class="input__wrap rdibox">
-                  <input type="radio" id="ra01">
-                  <label for="ra01">남자</label>
+                  <input type="radio" name="radio1" id="radio1" checked>
+                  <label for="radio1">남성</label>
+                  <input type="radio" name="radio1" id="radio2">
+                  <label for="radio2">여성</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">이메일</th>
+              <td>
+                <div class="input__wrap email">
+                  <label for="email" class="blind">이메일</label>
+                  <input type="text" id="email" class="" placeholder="emailid@email.com"> 
+                  <p class="refer">* 반드시 자주 사용하시는 메일을 입력해주세요.</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">주소</th>
+              <td>
+                <div class="input__form etc_inp">
+                  <label for="name" class="blind">주소</label>
+                  <input type="text" id="name" class="postnum">
+                  <button class="search">우편번호검색</button>
+                  <input type="text" id="">
+                  <input type="text" id="" placeholder="상세주소">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">소속회사</th>
+              <td>
+                <div class="input__form">                  
+                  <select name="" id="" title="해당항목선택">
+                    <option value="">선택 1</option>
+                    <option value="">선택 2</option>
+                    <option value="">선택 3</option>
+                  </select>   
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">직책</th>
+              <td>
+                <div class="input__form">                  
+                  <select name="" id="" title="해당항목선택">
+                    <option value="">선택 1</option>
+                    <option value="">선택 2</option>
+                    <option value="">선택 3</option>
+                  </select>   
                 </div>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <div class="button align--center">
+        <a href="#" class="btn btn--primary">회원가입</a>
+        <a href="#" class="btn btn--secondary">취소</a>
+      </div> <!-- // button end -->
     </div> <!-- // right__content end -->
   </div> <!-- // right end -->
 

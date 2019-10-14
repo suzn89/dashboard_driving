@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>지능형자동차부품진흥원-자율주행통합관제센터</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/layout.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1 class="header__logo"><a href="#"><img src="images/logo.png" alt="메인으로이동"></a></h1>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">기업관리</a></li>
+        <li><a href="#">분류코드관리</a></li>
+        <li><a href="#">차량관리</a></li>        
+        <li><a href="#">시험관리</a></li>
+        <li><a href="#">수집관리</a></li>
+        <li><a href="#">연계 및 통신</a></li>
+      </ul>
+    </nav>
+    <ul class="header__quick">
+      <li class="header__monitoring"><a href="#" class="normal">모니터링</a></li>  <!-- 클릭시 a에 normal 클래스 active로 변경-->
+      <li class="header__setting"><a href="#" class="active">설정</a></li>
+    </ul>
+  </header> <!-- // header end -->
+
+  <div class="left">
+    <h2 class="left__title">설정</h2>
+    <div class="left__2depth">
+      <li><a href="#">테스트배드 관리</a></li> <!-- 메뉴 선택시 li에 on클래스 추가-->      
+      <li class="on"><a href="#">POI 관리</a></li>
+      <li><a href="#">GIS 기본제어</a></li>
+      <li><a href="#">주제도 관리</a></li>
+      <li><a href="#">샘플링 주기설정</a></li>
+      <li><a href="#">보관년도 설정</a></li>
+    </div>
+  </div> <!-- // left end -->
+
+  <div class="right">
+      <div class="right__content">
+        <h3 class="right__title">
+          POI 관리
+        </h3>
+        <div class="item searchbox">
+          <div class="input__form">
+            <label for="name" class="form_tit">명칭</label>
+            <input type="text" id="name">
+          </div>
+          <a href="#" class="btn__search">조회</a>
+        </div> <!-- //  item end -->             
+      </div> <!-- // right__content end -->
+  
+      <div class="right__content">         
+        <div class="tablewrap">
+          <div class="button align--right">
+            <a href="#" class="btn btn--secondary">삭제</a>
+            <a href="#" class="btn btn--primary">신규등록</a>
+          </div> <!-- // button end -->
+          <table>
+            <colgroup>
+              <col style="width: 50px;">
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>              
+              <col>            
+              <col>            
+              <col style="width:100px;">            
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <div class="input__form">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox" class="ir">선택</label>
+                  </div>
+                </th>
+                <th>번호</th>
+                <th>코드명</th>
+                <th>명칭</th>
+                <th>구분</th>                
+                <th>위도</th>
+                <th>경도</th>
+                <th>설명</th>
+                <th>등록일자</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="input__form">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox" class="ir">선택</label>
+                  </div>
+                </td>
+                <td>1</td>
+                <td>코드명1234</td>
+                <td>명칭</td>
+                <td>구분구분</td>                
+                <td>35.2326263</td>
+                <td>127.6498375</td>
+                <td>설명입니다 설명인디 설명이 긴가</td>
+                <td>2019-08-04</td>
+              </tr>                       
+            </tbody>
+          </table>
+          <div class="pagenation">
+            <a href="#" class="first">처음</a>
+            <a href="#" class="prev">이전</a>
+            <ol>
+              <li><a href="#" class="view">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+            </ol>
+            <a href="#" class="next">다음</a>
+            <a href="#" class="last">끝</a>
+          </div> <!-- // pagenation -->
+          
+        </div><!-- // right__tablewrap -->
+      </div> <!-- // right__content end -->
+    </div> <!-- // right end -->
+  </div> <!-- // wrap end -->
+  
+  
+  
+  <!-- 레이어 팝업 시작-->
+  <div class="popupwrap">
+    <div class="layerpopup style1">
+      <div class="layerpopup__top">
+        <h4>POI 신규등록</h4>
+        <a href="#" class="popup__close">닫기</a>
+      </div>
+      <div class="layerpopup__content">
+        <div class="item">
+          <div class="input__form col2">
+            <label for="name" class="form_tit bullet">명칭</label>
+            <input type="text" id="name">          
+          </div>
+          <div class="input__form col2">
+            <span for="name" class="form_tit bullet">구분</span>
+            <select name="" id="" title="해당항목선택">
+              <option value="">선택</option>
+              <option value="">선택1</option>
+              <option value="">선택2</option>
+            </select>            
+          </div>
+          <div class="input__form col2">
+            <label for="name" class="form_tit">위도</label>
+            <input type="text" id="name">          
+          </div>           
+          <div class="input__form col2">
+            <label for="name" class="form_tit">경도</label>
+            <input type="text" id="name">          
+          </div>          
+          <div class="input__form col2">
+            <label for="name" class="form_tit">아이피주소1</label>
+            <input type="text" id="name">          
+          </div>          
+          <div class="input__form col2">
+            <label for="name" class="form_tit">아이피주소2</label>
+            <input type="text" id="name">          
+          </div>          
+          <div class="input__form">
+            <label for="name" class="form_tit">설명</label>
+            <input type="text" id="name">          
+          </div>          
+          <div class="input__form col2">
+            <span class="form_tit">사용여부</span>
+            <input type="checkbox" name="" id="checkbox" checked>
+            <label for="checkbox">사용</label>
+          </div> 
+        </div> <!-- // item end -->
+        <div class="button align--center">
+          <a href="#" class="btn btn--primary">등록</a>
+          <a href="#" class="btn btn--secondary">취소</a>
+        </div> <!-- // button end -->
+      </div> <!-- // 팝업 컨텐츠 끝-->
+    </div>
+    <div class="mask"></div>
+  </div>
+  <!-- 레이어 팝업 끝-->
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>지능형자동차부품진흥원-자율주행통합관제센터</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/layout.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1 class="header__logo"><a href="#"><img src="images/logo.png" alt="메인으로이동"></a></h1>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">기업관리</a></li>
+        <li><a href="#">분류코드관리</a></li>
+        <li><a href="#">차량관리</a></li>        
+        <li><a href="#">시험관리</a></li>
+        <li><a href="#">수집관리</a></li>
+        <li><a href="#">연계 및 통신</a></li>
+      </ul>
+    </nav>
+    <ul class="header__quick">
+      <li class="header__monitoring"><a href="#" class="normal">모니터링</a></li>  <!-- 클릭시 a에 normal 클래스 active로 변경-->
+      <li class="header__setting"><a href="#" class="active">설정</a></li>
+    </ul>
+  </header> <!-- // header end -->
+
+  <div class="left">
+    <h2 class="left__title">설정</h2>
+    <div class="left__2depth">
+      <li><a href="#">테스트배드 관리</a></li> <!-- 메뉴 선택시 li에 on클래스 추가-->      
+      <li><a href="#">POI 관리</a></li>
+      <li class="on"><a href="#">GIS 기본제어</a></li>
+      <li><a href="#">주제도 관리</a></li>
+      <li><a href="#">샘플링 주기설정</a></li>
+      <li><a href="#">보관년도 설정</a></li>
+    </div>
+  </div> <!-- // left end -->
+
+  <div class="right">
+      <div class="right__content">
+      <h3 class="right__title">
+        GIS기 기본제어
+      </h3>    
+      <div class="item">
+        <div class="input__form etc_inp_toggle col3">
+          <span class="input_tit">레이어</span>
+          <input type="checkbox" name="toggle" class="sw toggleswitch" id="toggle-1" checked>
+          <label for="toggle-1"></label>     
+        </div>
+        <div class="input__form etc_inp_toggle col3">
+          <span class="input_tit">ZOOM</span>
+          <input type="checkbox" name="toggle" class="sw toggleswitch" id="toggle-1" checked>
+          <label for="toggle-1"></label>     
+        </div>
+        <div class="input__form etc_inp_toggle col3">
+          <span class="input_tit">차량</span>
+          <input type="checkbox" name="toggle" class="sw toggleswitch" id="toggle-1" checked>
+          <label for="toggle-1"></label>     
+        </div>
+        <div class="input__form etc_inp_toggle col3">
+          <span class="input_tit">도로시설물</span>
+          <input type="checkbox" name="toggle" class="sw toggleswitch" id="toggle-1" checked>
+          <label for="toggle-1"></label>     
+        </div>
+        <div class="input__form etc_inp_toggle col3">
+          <span class="input_tit">바탕지도</span>
+          <input type="checkbox" name="toggle" class="sw toggleswitch" id="toggle-1" checked>
+          <label for="toggle-1"></label>     
+        </div>
+      </div> <!-- // item end -->
+      <div class="button align--right">
+        <a href="#" class="btn btn--primary">주제도 목록</a>        
+      </div> <!-- // button end -->
+    </div> <!-- // right__content end -->
+  </div> <!-- // right end -->
+</div> <!-- // wrap end -->
+</body>
+</html>
