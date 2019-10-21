@@ -323,7 +323,7 @@
   padding-left: 40px;
   min-height: 30px;
   line-height: 30px;
-  background: url("/images/radio.png") no-repeat;
+  background: url(../images/radio.png) no-repeat;
   cursor: pointer;
   font-size: 16px;
   color: #666666;
@@ -333,18 +333,15 @@
   padding-left: 30px;
   min-height: 20px;
   line-height: 20px;
-  background: url("/convention/html/bing/images/common/ico_radio02_off.png") no-repeat;
   color: #222222;
 }
 
 .input__wrap .rdibox .checked input[type=radio] + label {
-  background: url("/convention/html/bing/images/common/ico_radio_on.png") no-repeat;
   color: #ec1d25;
   font-weight: 500;
 }
 
 .input__wrap .rdibox .checked input[type=radio].design + label {
-  background: url("/convention/html/bing/images/common/ico_radio02_on.png") no-repeat;
   color: #222222;
   font-weight: 300;
 }
@@ -416,7 +413,7 @@
   width: 12px;
   height: 30px;
   content: '';
-  background: url(/images/first.png) center 5px no-repeat;
+  background: url(../images/first.png) center 5px no-repeat;
 }
 
 .pagenation .prev:after {
@@ -426,7 +423,7 @@
   width: 12px;
   height: 30px;
   content: '';
-  background: url(/images/prev.png) center 5px no-repeat;
+  background: url(../images/prev.png) center 5px no-repeat;
 }
 
 .pagenation .next:after {
@@ -436,7 +433,7 @@
   width: 12px;
   height: 30px;
   content: '';
-  background: url(/images/next.png) center 5px no-repeat;
+  background: url(../images/next.png) center 5px no-repeat;
 }
 
 .pagenation .last:after {
@@ -446,7 +443,7 @@
   width: 12px;
   height: 30px;
   content: '';
-  background: url(/images/last.png) center 5px no-repeat;
+  background: url(../images/last.png) center 5px no-repeat;
 }
 
 .pagenation ol {
@@ -515,7 +512,7 @@
   right: 15px;
   top: 14px;
   text-indent: -999em;
-  background: url(/images/close.png) center top no-repeat;
+  background: url(../images/close.png) center top no-repeat;
 }
 
 .layerpopup__top .popup__close:after {

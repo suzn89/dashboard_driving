@@ -12,7 +12,7 @@ body {
   height: 100vh;
   min-width: 1600px;
   min-height: 900px;
-  background: url(/images/login_bg.png) no-repeat;
+  background: url(../images/login_bg.png) no-repeat;
   background-size: cover;
 }
 
@@ -113,7 +113,7 @@ body {
   width: 100%;
   overflow: hidden;
   min-width: 1900px;
-  background: url(/images/left_bg.png) left top repeat-y;
+  background: url(../images/left_bg.png) left top repeat-y;
 }
 
 .wrap .header {
@@ -224,6 +224,14 @@ body {
   background: url(../images/setting.png) left 2px no-repeat;
 }
 
+.wrap .header__logout .normal:before {
+  content: '';
+  padding-left: 35px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/exit.png) left 2px no-repeat;
+}
+
 .wrap .header__monitoring .active:before {
   content: '';
   padding-left: 35px;
@@ -299,7 +307,7 @@ body {
   width: 10px;
   height: 40px;
   content: '';
-  background: url(/images/menu_arrow.png) center 13px no-repeat;
+  background: url(../images/menu_arrow.png) center 13px no-repeat;
 }
 
 .wrap .right {

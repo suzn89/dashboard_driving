@@ -326,7 +326,7 @@ $sw-width: 41px;
       padding-left:40px;
       min-height:30px;
       line-height:30px;
-      background:url('/images/radio.png') no-repeat;
+      background:url(../images/radio.png) no-repeat;
       cursor:pointer;
       font-size:16px;
       color:#666666;
@@ -334,17 +334,14 @@ $sw-width: 41px;
     input[type=radio].design+label {
       padding-left:30px;
       min-height:20px;
-      line-height:20px;
-      background:url('/convention/html/bing/images/common/ico_radio02_off.png') no-repeat;
+      line-height:20px;      
       color:#222222;
     }
     .checked input[type=radio]+label {
-      background:url('/convention/html/bing/images/common/ico_radio_on.png') no-repeat;
       color:#ec1d25;
       font-weight:500;
     }
-    .checked input[type=radio].design+label {
-      background:url('/convention/html/bing/images/common/ico_radio02_on.png') no-repeat;
+    .checked input[type=radio].design+label {      
       color:#222222;
       font-weight:300;
     }
@@ -408,7 +405,7 @@ $sw-width: 41px;
     width:12px;
     height:30px;
     content:'';
-    background:url(/images/first.png) center 5px no-repeat;
+    background:url(../images/first.png) center 5px no-repeat;
   }
   .prev:after {
     position:absolute;
@@ -417,7 +414,7 @@ $sw-width: 41px;
     width:12px;
     height:30px;
     content:'';
-    background:url(/images/prev.png) center 5px no-repeat;
+    background:url(../images/prev.png) center 5px no-repeat;
   }
   .next:after {
     position:absolute;
@@ -426,7 +423,7 @@ $sw-width: 41px;
     width:12px;
     height:30px;
     content:'';
-    background:url(/images/next.png) center 5px no-repeat;
+    background:url(../images/next.png) center 5px no-repeat;
   }
   .last:after {
     position:absolute;
@@ -435,7 +432,7 @@ $sw-width: 41px;
     width:12px;
     height:30px;
     content:'';
-    background:url(/images/last.png) center 5px no-repeat;
+    background:url(../images/last.png) center 5px no-repeat;
   }
   ol {
     display:inline-block;
@@ -493,7 +490,7 @@ $sw-width: 41px;
       right:15px;
       top:14px;
       text-indent:-999em;
-      background:url(/images/close.png) center top no-repeat;
+      background:url(../images/close.png) center top no-repeat;
       &:after {
         display:block;
         width:12px;
