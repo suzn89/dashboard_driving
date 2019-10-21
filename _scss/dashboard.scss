@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+$wallmonitor	: 7680px;
+$desktop		: 1920px;
+
+/* Color theme */
+$primaryColor:#0064b0;
+$primaryHover:#005ea5;
+$darkBg:#283139;
+$topMenuNormal:#354048;
+$topMenuHover:#0064b0;
+$leftTitle:#1b7dc8;
+$leftNormal:#b1bdc5;
+$leftSelect:#283139;
+$bodyBg:#f9fafc;
+$contentBorder:#E7ECF0;
+$titleDesc: #B1BDC5;
+$secondaryColor: #6E8699;
+
+$textNormal: #5b5c61;
+
+.wrap.dashboard {
+  width: 100%;
+  min-width: 1900px;
+  background: none;
+  .header {    
+    background: $darkBg;
+    &__nav li {
+      &:hover a {
+        color: $topMenuHover;
+      }
+      &.active a {
+        color:$topMenuHover;
+      }
+    }
+    &__nav li a {      
+      color: #747883;        
+    }
+  }
+}
+
+// only PC
+@mixin pc-large { //1921부터 먹는 스타일
+	@media screen and (min-width: $desktop + 1) {
+		@content;
+	}
+}
+// PC large
+@mixin pc-only {
+	@media screen and (min-width: $wallmonitor + 1) {
+		@content;
+	}
+}
+
+@include pc-large() {
+  body {
+    background:#cccccc;
+  }
+  .wrap.dashboard {
+    width: 100%;
+    min-width: 3840px;
+    background: none;
+    .header {
+      height: 150px;
+      background: $darkBg;
+      &__logo {
+        width: 495px;
+        height: 71px;
+        padding-top: 15px;
+        padding-left: 20px;
+        box-sizing: content-box;
+        line-height: 150px;
+        a {
+          width: 495px;
+          height: 71px;
+        }
+      }
+      &__nav li {
+        margin-left: 250px;
+        line-height: 150px;
+        &:hover a {
+          color: $topMenuHover;
+        }
+        &.active a {
+          color:$topMenuHover;
+        }
+      }
+      &__nav li a {
+        font-size: 2em;
+        color: #747883;        
+      }
+      &__quick li a {
+        font-size: 2em;
+      }
+      &__quick {
+        line-height: 150px;
+      }
+    }
+  }
+}
+@include pc-only() {
+  body {
+    background:#0884b4
+  }  
+}
