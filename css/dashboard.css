@@ -4,7 +4,7 @@
   width: 100%;
   height: 100vh;
   min-width: 1900px;
-  background: #3B4150;
+  background: #3b4150;
 }
 
 .wrap.dashboard .header {
@@ -46,7 +46,7 @@
 }
 
 .wrap.dashboard .board__top .depth2 li a {
-  color: #6E8699;
+  color: #6e8699;
 }
 
 .wrap.dashboard .board__top .depth2 li.active:after {
@@ -56,7 +56,7 @@
   content: '';
   width: 100%;
   height: 3px;
-  background: #0064B0;
+  background: #0064b0;
 }
 
 .wrap.dashboard .board__top .depth2 li.active a {
@@ -77,7 +77,7 @@
   float: left;
   padding-right: 10px;
   padding-left: 10px;
-  border-right: 1px solid #D5DBE6;
+  border-right: 1px solid #d5dbe6;
 }
 
 .wrap.dashboard .board__top .weather ul li:last-child {
@@ -95,7 +95,7 @@
 
 .wrap.dashboard .board__top .weather__dong dt {
   font-size: 15px;
-  color: #0064B0;
+  color: #0064b0;
 }
 
 .wrap.dashboard .board__top .weather__dong dd {
@@ -107,7 +107,7 @@
   float: left;
   margin-right: 8px;
   font-size: 15px;
-  color: #B1BDC5;
+  color: #b1bdc5;
 }
 
 .wrap.dashboard .board__top .weather__items dt img {
@@ -120,7 +120,7 @@
 .wrap.dashboard .board__top .weather__items dd {
   float: left;
   font-size: 15px;
-  color: #434C5D;
+  color: #434c5d;
   font-weight: 700;
 }
 
@@ -131,9 +131,9 @@
   line-height: 30px;
   font-size: 17px;
   font-weight: 800;
-  background: #F8FAFE;
+  background: #f8fafe;
   font-family: 'NanumSquare','맑은 고딕','malgun gothic', dotum;
-  color: #434C5D;
+  color: #434c5d;
 }
 
 .wrap.dashboard .board__top .weather .weatherimg {
@@ -148,7 +148,7 @@
 .wrap.dashboard .board__top .weather .temp {
   float: left;
   font-size: 26px;
-  color: #4A4D5A;
+  color: #4a4d5a;
 }
 
 .wrap.dashboard .board__content {
@@ -186,7 +186,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: #2F333E;
+  background: #2f333e;
   text-align: center;
 }
 
@@ -196,7 +196,7 @@
 
 .wrap.dashboard .board__content .boxarea:hover {
   background: rgba(165, 179, 212, 0.2);
-  border: 1px solid #A5B3D4;
+  border: 1px solid #a5b3d4;
 }
 
 .wrap.dashboard .board__content .boxarea__title {
@@ -246,6 +246,58 @@
   background: url(../images/close_big.png) center top no-repeat;
   background-size: 100%;
   text-indent: -999em;
+}
+
+.dashboard_table {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.dashboard_table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 2px solid #5b5c61;
+}
+
+.dashboard_table tbody {
+  width: 100%;
+  border-top: 1px solid #dae0e4;
+}
+
+.dashboard_table tr {
+  border-bottom: 1px solid #dae0e4;
+}
+
+.dashboard_table tr:hover td {
+  background: #f9fbfc;
+}
+
+.dashboard_table th {
+  margin: 0;
+  padding: 8px 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #5b5c61;
+  background: #f1f4f6;
+}
+
+.dashboard_table td {
+  text-align: center;
+  margin: 0;
+  padding: 8px 10px;
+  color: #6b6c70;
+}
+
+.dashboard_table td .select {
+  border-radius: 4px;
+  background: #a5b3d4;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.dashboard_table td .select:hover {
+  background: #7289c1;
 }
 
 @media screen and (min-width: 1921px) {
@@ -311,7 +363,7 @@
     content: '';
     width: 100%;
     height: 6px;
-    background: #0064B0;
+    background: #0064b0;
   }
   .wrap.dashboard .board__top .weather {
     padding-top: 2.8rem;
@@ -322,7 +374,7 @@
   .wrap.dashboard .board__top .weather ul li {
     padding-right: 2rem;
     padding-left: 2rem;
-    border-right: 1px solid #D5DBE6;
+    border-right: 1px solid #d5dbe6;
   }
   .wrap.dashboard .board__top .weather__dong {
     margin-right: 2rem;
@@ -330,7 +382,7 @@
   }
   .wrap.dashboard .board__top .weather__dong dt {
     font-size: 3rem;
-    color: #0064B0;
+    color: #0064b0;
   }
   .wrap.dashboard .board__top .weather__dong dd {
     font-size: 3.2rem;
@@ -384,7 +436,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: #2F333E;
+    background: #2f333e;
   }
   .wrap.dashboard .board__content .boxarea__title {
     width: 100%;
@@ -417,6 +469,32 @@
     background: url(../images/close_big.png) center top no-repeat;
     background-size: 100%;
     text-indent: -999em;
+  }
+  .layerpopup.style1 {
+    width: 800px !important;
+  }
+  .layerpopup.style1 .layerpopup__top {
+    height: 5rem;
+    line-height: 5rem;
+  }
+  .layerpopup.style1 .layerpopup__top h4 {
+    font-size: 2.2rem;
+  }
+  .dashboard_table {
+    height: 800px;
+    overflow-y: scroll;
+  }
+  .dashboard_table th {
+    padding: 1.6rem 2rem;
+    font-size: 2rem;
+  }
+  .dashboard_table td {
+    padding: 1.6rem 2rem;
+    font-size: 2rem;
+  }
+  .dashboard_table td .select {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
   }
 }
 
