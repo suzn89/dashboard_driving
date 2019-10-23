@@ -35,6 +35,7 @@ $textNormal:#5b5c61;
     &__nav li a {
       color:#747883;
     }
+    
   }
   .board {
     &__top {
@@ -233,6 +234,136 @@ $textNormal:#5b5c61;
         }
       }
     }
+    &__eventlist {
+      float:left;
+      width:250px;
+      height:calc(100% - 363px);
+      padding: 10px;
+      background:#f5f5f7;
+      h3 {
+        font-family:'NanumSquare','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
+        color: #0064b0;
+        font-weight:700;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      .scrolltbody {
+        display:block;
+        width:230px;
+        border-collapse:collapse;
+      }
+      .scrolltbody th {
+        text-align:left;
+        padding: 5px 8px;
+        border:0;
+        background:#354048;
+        color: #ffffff;
+      }
+      .scrolltbody td {
+        text-align:left;
+        padding: 5px 8px;
+        color: #6E8699;
+        border-bottom: 1px solid #DCDFE3;
+        border-top:0;
+        span {
+          display: block;
+        }
+      }
+      .scrolltbody tbody {
+        display:block;
+        height:calc(100vh - 590px);
+        overflow:auto;
+        td {          
+          font-size: 14px;
+        }
+      }
+      .scrolltbody th:nth-of-type(1),.scrolltbody td:nth-of-type(1) {
+        width:100px;
+      }
+      .scrolltbody th:nth-of-type(2),.scrolltbody td:nth-of-type(2) {
+        width:110px; /* 추가시 임의 조정 */
+      }
+      .scrolltbody th:nth-of-type(3),.scrolltbody td:nth-of-type(3) {
+        width:100px; /* 추가시 임의 조정 */
+      }
+      .scrolltbody th:last-child {
+        width:130px; /* 추가시 임의 조정 */
+      }
+      .scrolltbody td:last-child {
+        width:calc( 130px - 19px );
+      }
+    }
+    &__map {
+      overflow:hidden;
+      float:left;
+      width:calc(100% - 250px);
+      height:calc(100% - 363px);
+    }
+    &__video {
+      float:left;
+      width:100%;
+      height:363px;
+      padding: 5px;
+      .tablewrap {
+        float: left;
+        width: 33.333%;
+        height: calc(100% - 10px);
+        margin:5px 0;        
+        background: #ffffff;
+        overflow-y:scroll;
+        tbody {
+          width:100%;
+          border-top:1px solid #dae0e4;
+        }
+        tr {
+          border-bottom:1px solid #dae0e4;
+          &:hover td {
+            background: #F9FBFC;
+          }
+        }      
+        th {
+          padding:8px 10px;
+          text-align:left;
+          vertical-align:middle;
+          color:#5b5c61;
+          background:#f1f4f6;
+        }
+        td {
+          text-align: left;        
+          padding:8px 10px;
+          color: #6b6c70;
+          .select {
+            border-radius:4px;
+            background:#a5b3d4;
+            color:#ffffff;
+            font-size:13px;
+            padding:5px 0;
+            text-align:center;
+            &:hover {
+              background:#7289c1;
+            }
+          }
+        }
+      }
+      .view {
+        float:left;
+        width:16.666%;
+        height:178px;
+        padding:5px;
+        &__popup {
+          display:block;
+          width:38px;
+          height:38px;
+          background:url(../images/btn_popup.png) center top no-repeat;
+          background-size:100%;
+          position:absolute;
+          left:50%;
+          top:50%;
+          -webkit-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+        }
+      }
+    }
   }
 }
 .dashboard_table {
@@ -334,6 +465,46 @@ $textNormal:#5b5c61;
       &__quick {
         line-height:150px;
       }
+      &__monitoring .normal:before {
+        content:'';
+        padding-left:45px;
+        width:50px;
+        height:50px;
+        background:url(../images/monitoring.png) left 5px no-repeat;
+        background-size:80%;
+      }
+      &__setting .normal:before {
+        content:'';
+        padding-left:45px;
+        width:60px;
+        height:60px;
+        background:url(../images/setting.png) left 2px no-repeat;
+        background-size:100%;
+      }
+      &__logout .normal:before {
+        content:'';
+        padding-left:45px;
+        width:60px;
+        height:60px;
+        background:url(../images/exit.png) left 2px no-repeat;
+        background-size:100%;
+      }
+      &__monitoring .active:before {
+        content:'';
+        padding-left:45px;
+        width:50px;
+        height:50px;
+        background:url(../images/mornitoring_on.png) left 5px no-repeat;
+        background-size:80%;
+      }
+      &__setting .active:before {
+        content:'';
+        padding-left:45px;
+        width:60px;
+        height:60px;
+        background:url(../images/setting_on.png) left 2px no-repeat;
+        background-size:100%;
+      } 
     }
     .board {
       &__top {
@@ -457,6 +628,93 @@ $textNormal:#5b5c61;
             padding:2rem;
           }
         }
+        .board__eventlist {
+          width:785px;
+          height:calc(100% - 363px);
+          padding: 2rem;          
+          h3 {                        
+            font-size: 3rem;
+            margin-bottom: 16px;
+          }
+          .scrolltbody {
+            width:745px;            
+          }
+          .scrolltbody th {
+            padding: 10px 16px;
+            font-size: 2rem;
+          }
+          .scrolltbody td {
+            padding: 10px 16px;
+            span {
+              display: inline-block;
+              margin-right: 10px;
+            }
+          }
+          .scrolltbody tbody {
+            height:calc(100vh - 800px);
+            td {          
+              font-size: 2rem;
+            }
+          }
+          .scrolltbody th:nth-of-type(1),.scrolltbody td:nth-of-type(1) {
+            width:350px;
+          }
+          .scrolltbody th:nth-of-type(2),.scrolltbody td:nth-of-type(2) {
+            width:110px; /* 추가시 임의 조정 */
+          }
+          .scrolltbody th:nth-of-type(3),.scrolltbody td:nth-of-type(3) {
+            width:100px; /* 추가시 임의 조정 */
+          }
+          .scrolltbody th:last-child {
+            width:395px; /* 추가시 임의 조정 */
+          }
+          .scrolltbody td:last-child {
+            width:calc( 395px - 19px );
+          }
+        }
+        .board__map {
+          width:calc(100% - 785px);
+          height:calc(100% - 363px);
+        }
+        .board__video {
+          width:100%;
+          height:363px;
+          padding: 5px;
+          .tablewrap {
+            float: left;
+            width: 20%;
+            th {
+              padding:16px 20px;
+              font-size:2rem;              
+            }
+            td {
+              padding:16px 20px;
+              font-size: 2rem;
+              .select {
+                font-size:1.8rem;
+                padding:5px 0;
+              }
+            }
+          }
+          .view {
+            float:left;
+            width:10%;
+            height:354px;
+            padding:5px;
+            &__popup {
+              display:block;
+              width:38px;
+              height:38px;
+              background:url(../images/btn_popup.png) center top no-repeat;
+              background-size:100%;
+              position:absolute;
+              left:50%;
+              top:50%;
+              -webkit-transform:translate(-50%, -50%);
+              transform:translate(-50%, -50%);
+            }
+          }
+        }
       }
       .view__cam.boxarea {
         .boxarea__title {
@@ -474,25 +732,25 @@ $textNormal:#5b5c61;
     }
   }
   .layerpopup.style1 {
-    width: 800px !important;
+    width:800px !important;
     .layerpopup__top {
-      height: 5rem;
-      line-height: 5rem;
+      height:5rem;
+      line-height:5rem;
       h4 {
-        font-size: 2.2rem;
+        font-size:2.2rem;
       }
     }
   }
-  .dashboard_table {    
+  .dashboard_table {
     height:800px;
     overflow-y:scroll;
     th {
-      padding:1.6rem 2rem;      
-      font-size: 2rem;
+      padding:1.6rem 2rem;
+      font-size:2rem;
     }
     td {
       padding:1.6rem 2rem;
-      font-size: 2rem;
+      font-size:2rem;
       .select {
         font-size:1.8rem;
         padding:1rem 2rem;
