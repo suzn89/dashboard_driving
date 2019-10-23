@@ -20,8 +20,9 @@ $textNormal: #5b5c61;
 
 .wrap.dashboard {
   width: 100%;
+  height: 100vh;
   min-width: 1900px;
-  background: none;
+  background: #3B4150;
   .header {    
     background: $darkBg;
     &__nav li {
@@ -34,6 +35,204 @@ $textNormal: #5b5c61;
     }
     &__nav li a {      
       color: #747883;        
+    }
+  }
+  .board {
+    &__top {
+      background: #ffffff;      
+      padding: 0px 10px;
+      height:63px;
+      line-height:63px;
+      .depth2 {
+        display: inline-block;
+        li {
+          position: relative;          
+          display: inline-block;
+          height: 100%;
+          padding:0 10px;
+          margin-right: 20px;
+          font-size: 17px;          
+          font-family:'NanumSquare','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
+          font-weight:700;          
+          a {
+            color:#6E8699;
+          }
+          &.active:after {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #0064B0;
+          }
+          &.active a {
+            display: block;
+            color:#354048;            
+          }
+        }        
+      }
+      .weather {
+        float:right;
+        padding-top: 14px;
+        ul {
+          line-height: 30px;
+          li {            
+            float:left;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-right: 1px solid #D5DBE6;
+          }
+          li:last-child {
+            padding-right: 0;
+            border-right: none;
+          }
+        }        
+        &__dong {
+          float:left;
+          margin-right: 10px;
+          text-align:right;
+          color:#354048;
+          line-height: 15px;
+          dt {
+            font-size: 15px;
+            color: #0064B0;
+          }
+          dd {
+            font-size: 16px;
+            font-weight:700;
+          }
+        }
+        &__items {          
+          dt {
+            float: left;
+            margin-right: 8px;
+            font-size: 15px;
+            color:#B1BDC5;
+            img {
+              display: inline-block;              
+              width:16px;
+              vertical-align: middle;
+              margin-right: 8px;
+            }
+          }
+          dd {
+            float: left;
+            font-size: 15px;
+            color:#434C5D;
+            font-weight:700;
+          }
+        }
+        .day {
+          display: block;
+          padding: 0px 20px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 17px;
+          font-weight:800;
+          background:#F8FAFE;
+          font-family:'NanumSquare','맑은 고딕','malgun gothic', dotum;
+          color:#434C5D;
+        }        
+        .weatherimg {
+          float:left;
+          img {
+            width: 32px;
+            margin-right: 8px;
+          }          
+        }
+        .temp {
+          float:left;
+          font-size:26px;
+          color:#4A4D5A;
+        }
+      }
+    }
+    &__content {
+      position: relative;
+      width: 100%;      
+      height: calc(100vh - 143px);      
+      .view {        
+        float:left;
+        width: 16.666%;
+        height: 178px;
+        padding: 5px;
+        &__popup {
+          display: block;
+          width: 38px;
+          height: 38px;
+          background: url(../images/btn_popup.png) center top no-repeat;
+          background-size: 100%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        &__graph {
+          background:#ffffff !important;
+        }
+      }
+      .boxarea {
+        overflow-y: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background:#2F333E;
+        text-align:center;
+        > img {
+          width: 100%;
+        }
+        &:hover {
+          background: rgba(165, 179, 212, 0.2);
+          border:1px solid #A5B3D4;
+        }
+        &__title {
+          position: relative;
+          width:100%;
+          height: 30px;
+          margin-bottom: 8px;
+          padding: 0 10px;
+          line-height: 30px;
+          > p {
+            text-align: left;
+          }
+          .btn_close {
+            display:block;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: url(../images/close_gray.png) center top no-repeat;
+            background-size: 100%;
+            text-indent: -999em;
+          }
+        }
+        &__cont {
+          padding: 10px;
+        }
+      }
+      .view__cam.boxarea {
+        .boxarea__title {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba(47, 51, 62, 0.8);
+          color: #ffffff;
+          .btn_close {
+            display:block;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: url(../images/close_big.png) center top no-repeat;
+            background-size: 100%;
+            text-indent: -999em;
+          }
+        }
+      }
     }
   }
 }
@@ -52,13 +251,12 @@ $textNormal: #5b5c61;
 }
 
 @include pc-large() {
-  body {
-    background:#cccccc;
+  html {
+    font-size: 10px;
   }
   .wrap.dashboard {
     width: 100%;
     min-width: 3840px;
-    background: none;
     .header {
       height: 150px;
       background: $darkBg;
@@ -93,6 +291,143 @@ $textNormal: #5b5c61;
       }
       &__quick {
         line-height: 150px;
+      }
+    }
+    .board {
+      &__top {
+        padding: 0 2em;
+        height: 126px;
+        line-height: 126px;
+        .depth2 {
+          li {
+            display: inline-block;
+            padding: 0rem 1rem;
+            margin-right: 2rem;
+            font-size: 3rem;
+            &.active:after {
+              position: absolute;
+              left: 0;
+              bottom: 0px;
+              content: '';
+              width: 100%;
+              height: 6px;
+              background: #0064B0;
+            }
+          }
+        }
+        .weather {          
+          padding-top: 2.8rem;
+          ul {
+            line-height: 60px;
+            li {            
+              padding-right: 2rem;
+              padding-left: 2rem;
+              border-right: 1px solid #D5DBE6;
+            }
+          }        
+          &__dong {
+            margin-right: 2rem;
+            line-height: 3rem;
+            dt {
+              font-size: 3rem;
+              color: #0064B0;
+            }
+            dd {
+              font-size: 3.2rem;
+              font-weight:700;
+            }
+          }
+          &__items {          
+            dt {              
+              margin-right: 2rem;
+              font-size: 3rem;              
+              img {
+                width:32px;                
+                margin-right: 2rem;
+              }
+            }
+            dd {              
+              font-size: 3rem;
+            }
+          }
+          .day {
+            padding: 0 4rem;
+            height: 60px;
+            line-height: 60px;
+            font-size: 3.4rem;            
+          }        
+          .weatherimg {            
+            img {
+              width: 64px;
+              margin-right: 2rem;
+            }          
+          }
+          .temp {            
+            font-size:4.6rem;            
+          }
+        }
+      }
+      &__content { 
+        height: calc(100vh - 276px);      
+        .view {                  
+          width: 10%;
+          height: 20%;
+          padding: 1rem;
+          &__popup {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: url(../images/btn_popup.png) center top no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+          }
+        }
+        .boxarea {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background:#2F333E;   
+          &__title {            
+            width:100%;
+            height: 60px;
+            margin-bottom: 1.6rem;
+            padding: 0 2rem;
+            font-size: 2.5rem;
+            line-height: 60px;            
+            > p {
+              text-align: left;
+            }
+            .btn_close {
+              right: 10px;
+              top: 15px;
+              width: 30px;
+              height: 30px;
+              background: url(../images/close_gray.png) center top no-repeat;
+              background-size: 100%;
+              text-indent: -999em;
+            }
+          }
+          &__cont {
+            padding: 2rem;
+          }          
+        }
+      }
+      .view__cam.boxarea {
+        .boxarea__title {
+          .btn_close {
+            right: 1rem;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            background: url(../images/close_big.png) center top no-repeat;
+            background-size: 100%;
+            text-indent: -999em;
+          }
+        }
       }
     }
   }
