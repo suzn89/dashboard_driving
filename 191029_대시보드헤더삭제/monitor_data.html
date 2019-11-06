@@ -7,16 +7,8 @@
   <title>지능형자동차부품진흥원-자율주행통합관제센터</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/layout.css">  
-  <link rel="stylesheet" href="css/jquery-ui.css">  
+  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $( function() {
-      $( "#dialog" ).dialog();
-    } );
-  </script>
 </head>
 <body>
   <div class="wrap dashboard">    
@@ -70,24 +62,7 @@
         </div>
       </div> <!-- // board__top -->
 
-      <div class="board__content">        
-
-        <!-- 다이얼로그 -->
-        <div id="dialog" class="chart" title="차량속도 모니터링">
-          <div class="chartbox">
-            차트영역
-          </div>
-          <div class="chartinfo">
-            <dl>
-              <dt>Lateral Speed</dt>
-              <dd>0.02</dd>
-            </dl>
-            <dl>
-              <dt>ADD</dt>
-              <dd>0.01</dd>
-            </dl>
-          </div>
-        </div>
+      <div class="board__content">
 
         <div class="view">
           <div class="view__cam boxarea"> <!-- 카메라 -->
@@ -256,6 +231,55 @@
       </div> <!-- // board content end -->
     </div> <!-- // board end -->
   </div> <!-- // wrap end -->
-
+<!-- 레이어 팝업 시작-->
+<div class="popupwrap">
+  <div class="layerpopup style1">
+    <div class="layerpopup__top">
+      <h4>장비선택</h4>
+      <a href="#" class="popup__close">닫기</a>
+    </div>
+    <div class="layerpopup__content">
+      <div class="dashboard_table">       
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <colgroup>
+            <col>
+            <col>
+            <col style="width: 80px;">           
+          </colgroup>
+          <thead>
+            <tr>              
+              <th>장비ID</th>
+              <th>장비명</th>
+              <th>선택</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>장비ID</td>
+              <td>장비명장비명</td>
+              <td><a href="#" class="select">선택</a></td>
+            </tr>          
+            <tr>
+              <td>장비ID</td>
+              <td>장비명장비명</td>
+              <td><a href="#" class="select">선택</a></td>
+            </tr>          
+            <tr>
+              <td>장비ID</td>
+              <td>장비명장비명</td>
+              <td><a href="#" class="select">선택</a></td>
+            </tr>          
+          </tbody>
+        </table>   
+      </div><!-- // right__tablewrap -->
+      <div class="button align--center">        
+        <a href="#" class="btn btn--secondary">닫기</a>
+      </div> <!-- // button end -->
+    </div> <!-- // 팝업 컨텐츠 끝-->
+  </div>
+  <div class="mask"></div>
+</div>
+<!-- 레이어 팝업 끝-->
+ 
 </body>
 </html>

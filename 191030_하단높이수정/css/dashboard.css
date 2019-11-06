@@ -475,56 +475,6 @@
   background: #7289c1;
 }
 
-.ui-widget.ui-widget-content {
-  border: 0;
-}
-
-.ui-widget-header {
-  border: 0;
-  background: transparent;
-  font-family: 'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
-  color: #565656;
-  font-weight: normal;
-}
-
-.ui-button .ui-icon {
-  background: url(../images/close_gray.png) center top no-repeat;
-  background-size: 20px;
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-  border: 0;
-  background: transparent;
-}
-
-#dialog.chart .chartinfo {
-  margin-top: 10px;
-}
-
-#dialog.chart .chartinfo dl {
-  display: inline-block;
-  text-align: center;
-  min-width: 120px;
-}
-
-#dialog.chart .chartinfo dl dt {
-  padding: 4px 8px;
-  background: #6e8699;
-  color: #f8fafe;
-}
-
-#dialog.chart .chartinfo dl dd {
-  font-family: 'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: #3b4150;
-}
-
-#dialog.chart .chartinfo dl + dl {
-  padding-left: 10px;
-  border-left: 1px solid #dadada;
-}
-
 @media screen and (min-width: 1921px) {
   html {
     font-size: 10px;

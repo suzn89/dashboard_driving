@@ -475,56 +475,6 @@
   background: #7289c1;
 }
 
-.ui-widget.ui-widget-content {
-  border: 0;
-}
-
-.ui-widget-header {
-  border: 0;
-  background: transparent;
-  font-family: 'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
-  color: #565656;
-  font-weight: normal;
-}
-
-.ui-button .ui-icon {
-  background: url(../images/close_gray.png) center top no-repeat;
-  background-size: 20px;
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-  border: 0;
-  background: transparent;
-}
-
-#dialog.chart .chartinfo {
-  margin-top: 10px;
-}
-
-#dialog.chart .chartinfo dl {
-  display: inline-block;
-  text-align: center;
-  min-width: 120px;
-}
-
-#dialog.chart .chartinfo dl dt {
-  padding: 4px 8px;
-  background: #6e8699;
-  color: #f8fafe;
-}
-
-#dialog.chart .chartinfo dl dd {
-  font-family: 'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: #3b4150;
-}
-
-#dialog.chart .chartinfo dl + dl {
-  padding-left: 10px;
-  border-left: 1px solid #dadada;
-}
-
 @media screen and (min-width: 1921px) {
   html {
     font-size: 10px;
@@ -741,7 +691,7 @@
   }
   .wrap.dashboard .board__content .board__eventlist {
     width: 1195px;
-    height: calc(100% - 393px);
+    height: calc(100% - 213px);
     padding: 2rem;
   }
   .wrap.dashboard .board__content .board__eventlist h3 {
@@ -788,16 +738,16 @@
   }
   .wrap.dashboard .board__content .board__map {
     width: calc(100% - 1195px);
-    height: calc(100% - 393px);
+    height: calc(100% - 213px);
   }
   .wrap.dashboard .board__content .board__video {
     width: 100%;
-    height: 543px;
+    height: 363px;
     padding: 5px;
   }
   .wrap.dashboard .board__content .board__video .tablewrap {
     float: left;
-    width: 25%;
+    width: 20%;
   }
   .wrap.dashboard .board__content .board__video .tablewrap th {
     padding: 16px 20px;
@@ -813,8 +763,8 @@
   }
   .wrap.dashboard .board__content .board__video .view {
     float: left;
-    width: 12.5%;
-    height: 534px;
+    width: 10%;
+    height: 354px;
     padding: 5px;
   }
   .wrap.dashboard .board__content .board__video .view__popup {
@@ -828,9 +778,6 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-  .wrap.dashboard .board__content .board__video .displaynone {
-    display: none;
   }
   .wrap.dashboard .board .view__cam.boxarea .boxarea__title .btn_close {
     right: 1rem;

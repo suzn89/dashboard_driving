@@ -246,7 +246,7 @@ $textNormal:#5b5c61;
             text-indent:-999em;
           }
         }
-      }
+      }     
     }
     &__eventlist {
       float:left;
@@ -423,6 +423,54 @@ $textNormal:#5b5c61;
     }
   }
 }
+// dialog design
+.ui-widget.ui-widget-content {
+  border: 0;
+}
+.ui-widget-header {
+  border: 0;
+  background: transparent;
+  font-family: 'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
+  color: #565656;
+  font-weight: normal;  
+}
+.ui-button .ui-icon {
+  background: url(../images/close_gray.png) center top no-repeat;
+  background-size: 20px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 0;
+  background: transparent;
+}
+#dialog.chart {
+  .chartbox {
+        
+  }
+  .chartinfo {
+    margin-top: 10px;
+    dl {
+      display:inline-block;
+      text-align:center;
+      min-width: 120px;
+      dt {
+        padding: 4px 8px;
+        background: #6e8699;
+        color: #f8fafe;
+      }
+      dd {
+        font-family: 'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif;
+        font-size: 22px;
+        font-weight: 700;        
+        color: #3b4150;
+      }
+    }
+    dl + dl {
+      padding-left: 10px;
+      border-left: 1px solid #dadada;
+    }
+  }
+}
+
 // only PC
 @mixin pc-large {
   //1921부터 먹는 스타일
@@ -657,7 +705,7 @@ $textNormal:#5b5c61;
         }
         .board__eventlist {
           width:1195px;
-          height:calc(100% - 213px);
+          height:calc(100% - 393px);
           padding: 2rem;          
           h3 {                        
             font-size: 3rem;
@@ -701,15 +749,15 @@ $textNormal:#5b5c61;
         }
         .board__map {
           width:calc(100% - 1195px);
-          height:calc(100% - 213px);
+          height:calc(100% - 393px);
         }
         .board__video {
           width:100%;
-          height:363px;
+          height:543px;
           padding: 5px;
           .tablewrap {
             float: left;
-            width: 20%;
+            width: 25%;
             th {
               padding:16px 20px;
               font-size:2rem;              
@@ -725,8 +773,8 @@ $textNormal:#5b5c61;
           }
           .view {
             float:left;
-            width:10%;
-            height:354px;
+            width:12.5%;
+            height:534px;
             padding:5px;
             &__popup {
               display:block;
@@ -740,6 +788,9 @@ $textNormal:#5b5c61;
               -webkit-transform:translate(-50%, -50%);
               transform:translate(-50%, -50%);
             }
+          }
+          .displaynone {
+            display:none
           }
         }
       }
@@ -785,6 +836,7 @@ $textNormal:#5b5c61;
     }
   }
 }
+
 @include pc-only() {
   body {
     background:#0884b4;
