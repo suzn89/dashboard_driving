@@ -246,7 +246,25 @@ $textNormal:#5b5c61;
             text-indent:-999em;
           }
         }
-      }     
+      }
+      .add_dialog {
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background:url(../images/btn_popup.png) center top no-repeat;
+        background-size:100%;
+        transition:all 300ms linear;
+        &:hover {          
+          width: 45px;
+          height: 45px;          
+          background:url(../images/btn_popup.png) center top no-repeat;
+          background-size:100%;          
+          transition: all 300ms linear;
+        }
+      }
     }
     &__eventlist {
       float:left;
@@ -442,10 +460,7 @@ $textNormal:#5b5c61;
   border: 0;
   background: transparent;
 }
-#dialog.chart {
-  .chartbox {
-        
-  }
+#dialog.chart {  
   .chartinfo {
     margin-top: 10px;
     dl {
@@ -792,7 +807,7 @@ $textNormal:#5b5c61;
           .displaynone {
             display:none
           }
-        }
+        }        
       }
       .view__cam.boxarea {
         .boxarea__title {
