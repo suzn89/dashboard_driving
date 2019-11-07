@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/dashboard.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/custom.js"></script> <!-- custom.js 추가됨-->
   <script>
     $( function() {
       $( "#dialog" ).dialog();
@@ -95,5 +96,54 @@
     </div> <!-- // board end -->
   </div> <!-- // wrap end -->
 
+<!-- 레이어 팝업 시작-->
+<div class="popupwrap">
+  <div class="layerpopup style1">
+    <div class="layerpopup__top">
+      <h4>장비선택</h4>
+      <a href="#" class="popup__close">닫기</a>
+    </div>
+    <div class="layerpopup__content">
+      <div class="dashboard_table">       
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <colgroup>
+            <col>
+            <col>
+            <col style="width: 80px;">           
+          </colgroup>
+          <thead>
+            <tr>              
+              <th>장비ID</th>
+              <th>장비명</th>
+              <th>선택</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8TTT99</td>
+              <td>차량1</td>
+              <td><a href="#" class="select">선택</a></td>
+            </tr>          
+            <tr>
+              <td>장비ID</td>
+              <td>장비명장비명</td>
+              <td><a href="#" class="select">선택</a></td>
+            </tr>          
+            <tr>
+              <td>장비ID</td>
+              <td>장비명장비명</td>
+              <td><a href="#" class="select">선택</a></td>
+            </tr>          
+          </tbody>
+        </table>   
+      </div><!-- // right__tablewrap -->
+      <div class="button align--center">        
+        <a href="#" class="btn btn--secondary">닫기</a>
+      </div> <!-- // button end -->
+    </div> <!-- // 팝업 컨텐츠 끝-->
+  </div>
+  <div class="mask"></div>
+</div>
+<!-- 레이어 팝업 끝-->
 </body>
 </html>
