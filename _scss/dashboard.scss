@@ -439,8 +439,31 @@ $textNormal:#5b5c61;
         background:#7289c1;
       }
     }
+  }  
+  tr.active td {
+    display: table-cell;
+    background: #dae0e4;
+    text-align:left;
   }
 }
+
+.fold-table tr.fold {
+  display: none;
+  &.open { 
+    display:table-row;
+  }
+  td {
+    background: #dae0e4;
+  }
+}
+.fold-table .fold-content {
+  text-align: left;
+  input[type='checkbox'] + label {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
 // dialog design
 .ui-widget.ui-widget-content {
   border: 0;
@@ -848,7 +871,7 @@ $textNormal:#5b5c61;
         font-size:1.8rem;
         padding:1rem 2rem;
       }
-    }
+    }    
   }
 }
 

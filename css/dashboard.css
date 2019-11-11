@@ -497,6 +497,33 @@
   background: #7289c1;
 }
 
+.dashboard_table tr.active td {
+  display: table-cell;
+  background: #dae0e4;
+  text-align: left;
+}
+
+.fold-table tr.fold {
+  display: none;
+}
+
+.fold-table tr.fold.open {
+  display: table-row;
+}
+
+.fold-table tr.fold td {
+  background: #dae0e4;
+}
+
+.fold-table .fold-content {
+  text-align: left;
+}
+
+.fold-table .fold-content input[type='checkbox'] + label {
+  height: 30px;
+  line-height: 30px;
+}
+
 .ui-widget.ui-widget-content {
   border: 0;
 }
