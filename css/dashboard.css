@@ -325,7 +325,7 @@
 .wrap.dashboard .board__eventlist {
   float: left;
   width: 500px;
-  height: calc(100% - 363px);
+  height: 100%;
   padding: 10px;
   background: #f5f5f7;
 }
@@ -366,12 +366,18 @@
 
 .wrap.dashboard .board__eventlist .scrolltbody tbody {
   display: block;
-  height: calc(100vh - 590px);
+  height: calc(100vh - 610px);
+  min-height: 360px;
   overflow: auto;
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody tbody td {
   font-size: 14px;
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody.style2 tbody {
+  height: calc(100vh - 610px);
+  min-height: 360px;
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody th:nth-of-type(1), .wrap.dashboard .board__eventlist .scrolltbody td:nth-of-type(1) {
@@ -389,7 +395,7 @@
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody th:last-child {
-  width: 120px;
+  width: 100px;
   /* 추가시 임의 조정 */
 }
 
@@ -397,18 +403,52 @@
   width: calc( 120px - 19px);
 }
 
+.wrap.dashboard .board__eventlist .scrolltbody.style2 th:nth-of-type(1), .wrap.dashboard .board__eventlist .scrolltbody.style2 td:nth-of-type(1) {
+  width: 180px;
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody.style2 th:nth-of-type(2), .wrap.dashboard .board__eventlist .scrolltbody.style2 td:nth-of-type(2) {
+  width: 180px;
+  /* 추가시 임의 조정 */
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody.style2 th:nth-of-type(3), .wrap.dashboard .board__eventlist .scrolltbody.style2 td:nth-of-type(3) {
+  width: 100px;
+  /* 추가시 임의 조정 */
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody.style2 th:last-child {
+  width: 120px;
+  /* 추가시 임의 조정 */
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody.style2 td:last-child {
+  width: calc( 100px - 19px);
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody a.select {
+  border-radius: 4px;
+  background: #a5b3d4;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.wrap.dashboard .board__eventlist .scrolltbody a.select:hover {
+  background: #7289c1;
+}
+
 .wrap.dashboard .board__map {
   overflow: hidden;
   float: left;
   width: calc(100% - 500px);
-  height: calc(100% - 363px);
+  height: calc(100vh - 63px);
 }
 
 .wrap.dashboard .board__video {
   float: left;
   width: 100%;
-  height: 363px;
-  padding: 5px;
 }
 
 .wrap.dashboard .board__video .tablewrap {
@@ -609,6 +649,11 @@
   border-left: 1px solid #dadada;
 }
 
+.emptydiv {
+  width: 100%;
+  height: 30px;
+}
+
 @media screen and (min-width: 1921px) {
   html {
     font-size: 10px;
@@ -775,7 +820,7 @@
     font-size: 4.6rem;
   }
   .wrap.dashboard .board__content {
-    height: calc(100vh - 276px);
+    height: calc(100vh - 126px);
   }
   .wrap.dashboard .board__content .view {
     width: 10%;
@@ -825,7 +870,7 @@
   }
   .wrap.dashboard .board__content .board__eventlist {
     width: 1195px;
-    height: calc(100% - 393px);
+    height: 100%;
     padding: 2rem;
   }
   .wrap.dashboard .board__content .board__eventlist h3 {
@@ -847,10 +892,16 @@
     margin-right: 10px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody tbody {
-    height: calc(100vh - 640px);
+    display: block;
+    height: calc(100vh - 1400px);
+    min-height: 820px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody tbody td {
     font-size: 2rem;
+  }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 tbody {
+    height: calc(100vh - 1400px);
+    min-height: 820px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody th:nth-of-type(1), .wrap.dashboard .board__content .board__eventlist .scrolltbody td:nth-of-type(1) {
     width: 390px;
@@ -870,30 +921,34 @@
   .wrap.dashboard .board__content .board__eventlist .scrolltbody td:last-child {
     width: calc( 375px - 19px);
   }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:nth-of-type(1), .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:nth-of-type(1) {
+    width: 490px;
+  }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:nth-of-type(2), .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:nth-of-type(2) {
+    width: 490px;
+    /* 추가시 임의 조정 */
+  }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:nth-of-type(3), .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:nth-of-type(3) {
+    width: 100px;
+    /* 추가시 임의 조정 */
+  }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:last-child {
+    width: 175px;
+    /* 추가시 임의 조정 */
+  }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:last-child {
+    width: calc( 175px - 19px);
+  }
+  .wrap.dashboard .board__content .board__eventlist .scrolltbody a.select {
+    font-size: 1.8rem;
+    padding: 5px 0;
+  }
   .wrap.dashboard .board__content .board__map {
     width: calc(100% - 1195px);
-    height: calc(100% - 393px);
+    height: calc(100vh - 126px);
   }
   .wrap.dashboard .board__content .board__video {
     width: 100%;
-    height: 543px;
-    padding: 5px;
-  }
-  .wrap.dashboard .board__content .board__video .tablewrap {
-    float: left;
-    width: 25%;
-  }
-  .wrap.dashboard .board__content .board__video .tablewrap th {
-    padding: 16px 20px;
-    font-size: 2rem;
-  }
-  .wrap.dashboard .board__content .board__video .tablewrap td {
-    padding: 16px 20px;
-    font-size: 2rem;
-  }
-  .wrap.dashboard .board__content .board__video .tablewrap td .select {
-    font-size: 1.8rem;
-    padding: 5px 0;
   }
   .wrap.dashboard .board__content .board__video .view {
     float: left;

@@ -301,7 +301,7 @@ $textNormal:#5b5c61;
     &__eventlist {
       float:left;
       width:500px;
-      height:calc(100% - 363px);
+      height:100%;
       padding: 10px;
       background:#f5f5f7;
       h3 {
@@ -335,11 +335,16 @@ $textNormal:#5b5c61;
       }
       .scrolltbody tbody {
         display:block;
-        height:calc(100vh - 590px);
+        height:calc(100vh - 610px);
+        min-height: 360px;
         overflow:auto;
         td {          
           font-size: 14px;
         }
+      }
+      .scrolltbody.style2 tbody {
+        height: calc(100vh - 610px);
+        min-height: 360px;
       }
       .scrolltbody th:nth-of-type(1),.scrolltbody td:nth-of-type(1) {
         width:180px;
@@ -351,23 +356,47 @@ $textNormal:#5b5c61;
         width:100px; /* 추가시 임의 조정 */
       }
       .scrolltbody th:last-child {
-        width:120px; /* 추가시 임의 조정 */
+        width:100px; /* 추가시 임의 조정 */
       }
       .scrolltbody td:last-child {
         width:calc( 120px - 19px );
+      }      
+      .scrolltbody.style2 th:nth-of-type(1),.scrolltbody.style2 td:nth-of-type(1) {
+        width:180px;
+      }
+      .scrolltbody.style2 th:nth-of-type(2),.scrolltbody.style2 td:nth-of-type(2) {
+        width:180px; /* 추가시 임의 조정 */
+      }
+      .scrolltbody.style2 th:nth-of-type(3),.scrolltbody.style2 td:nth-of-type(3) {
+        width:100px; /* 추가시 임의 조정 */
+      }
+      .scrolltbody.style2 th:last-child {
+        width:120px; /* 추가시 임의 조정 */
+      }
+      .scrolltbody.style2 td:last-child {
+        width:calc( 100px - 19px );
+      }
+      .scrolltbody a.select {
+        border-radius:4px;
+        background:#a5b3d4;
+        color:#ffffff;
+        font-size:13px;
+        padding:5px 0;
+        text-align:center;
+        &:hover {
+          background:#7289c1;
+        }
       }
     }
     &__map {
       overflow:hidden;
       float:left;
       width:calc(100% - 500px);
-      height:calc(100% - 363px);
+      height:calc(100vh - 63px);
     }
     &__video {
       float:left;
-      width:100%;
-      height:363px;
-      padding: 5px;
+      width:100%;           
       .tablewrap {
         float: left;
         width: 33.333%;
@@ -541,6 +570,10 @@ $textNormal:#5b5c61;
   }
 }
 
+.emptydiv {
+  width: 100%;
+  height: 30px;
+}
 // only PC
 @mixin pc-large {
   //1921부터 먹는 스타일
@@ -726,7 +759,7 @@ $textNormal:#5b5c61;
         }
       }
       &__content {
-        height:calc(100vh - 276px);
+        height:calc(100vh - 126px);
         .view {
           width:10%;
           height:20%;
@@ -775,14 +808,14 @@ $textNormal:#5b5c61;
         }
         .board__eventlist {
           width:1195px;
-          height:calc(100% - 393px);
+          height:100%;
           padding: 2rem;          
           h3 {                        
             font-size: 3rem;
             margin-bottom: 16px;
           }
           .scrolltbody {
-            width:1155px;            
+            width:1155px;              
           }
           .scrolltbody th {
             padding: 10px 16px;
@@ -796,10 +829,16 @@ $textNormal:#5b5c61;
             }
           }
           .scrolltbody tbody {
-            height:calc(100vh - 640px);
+            display:block;
+            height:calc(100vh - 1400px);
+            min-height: 820px;
             td {          
               font-size: 2rem;
             }
+          }
+          .scrolltbody.style2 tbody {
+            height: calc(100vh - 1400px);
+            min-height: 820px;
           }
           .scrolltbody th:nth-of-type(1),.scrolltbody td:nth-of-type(1) {
             width:390px;
@@ -816,31 +855,35 @@ $textNormal:#5b5c61;
           .scrolltbody td:last-child {
             width:calc( 375px - 19px );
           }
+         
+          .scrolltbody.style2 th:nth-of-type(1),.scrolltbody.style2 td:nth-of-type(1) {
+            width:490px;
+          }
+          .scrolltbody.style2 th:nth-of-type(2),.scrolltbody.style2 td:nth-of-type(2) {
+            width:490px; /* 추가시 임의 조정 */
+          }
+          .scrolltbody.style2 th:nth-of-type(3),.scrolltbody.style2 td:nth-of-type(3) {
+            width:100px; /* 추가시 임의 조정 */
+          }
+          .scrolltbody.style2 th:last-child {
+            width:175px; /* 추가시 임의 조정 */
+          }
+          .scrolltbody.style2 td:last-child {
+            width:calc( 175px - 19px );
+          }
+          .scrolltbody a.select {
+            
+              font-size:1.8rem;
+              padding:5px 0;
+            
+          }          
         }
         .board__map {
           width:calc(100% - 1195px);
-          height:calc(100% - 393px);
+          height:calc(100vh - 126px);
         }
         .board__video {
-          width:100%;
-          height:543px;
-          padding: 5px;
-          .tablewrap {
-            float: left;
-            width: 25%;
-            th {
-              padding:16px 20px;
-              font-size:2rem;              
-            }
-            td {
-              padding:16px 20px;
-              font-size: 2rem;
-              .select {
-                font-size:1.8rem;
-                padding:5px 0;
-              }
-            }
-          }
+          width:100%;          
           .view {
             float:left;
             width:12.5%;
