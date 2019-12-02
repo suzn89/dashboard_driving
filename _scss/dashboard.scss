@@ -107,14 +107,17 @@ $textNormal:#5b5c61;
           margin-right:10px;
           text-align:right;
           color:#354048;
-          line-height:15px;
+          line-height:32px;
           dt {
+            margin-right: 8px;
             font-size:15px;
             color:#0064b0;
+            float:left;
           }
           dd {
             font-size:16px;
             font-weight:700;
+            float:left;
           }
         }
         &__items {
@@ -300,7 +303,7 @@ $textNormal:#5b5c61;
     }
     &__eventlist {
       float:left;
-      width:500px;
+      width:400px;
       height:100%;
       padding: 10px;
       background:#f5f5f7;
@@ -313,7 +316,7 @@ $textNormal:#5b5c61;
       }
       .scrolltbody {
         display:block;
-        width:480px;
+        width:380px;
         border-collapse:collapse;
       }
       .scrolltbody th {
@@ -347,10 +350,10 @@ $textNormal:#5b5c61;
         min-height: 360px;
       }
       .scrolltbody th:nth-of-type(1),.scrolltbody td:nth-of-type(1) {
-        width:180px;
+        width:130px;
       }
       .scrolltbody th:nth-of-type(2),.scrolltbody td:nth-of-type(2) {
-        width:180px; /* 추가시 임의 조정 */
+        width:130px; /* 추가시 임의 조정 */
       }
       .scrolltbody th:nth-of-type(3),.scrolltbody td:nth-of-type(3) {
         width:100px; /* 추가시 임의 조정 */
@@ -362,10 +365,10 @@ $textNormal:#5b5c61;
         width:calc( 120px - 19px );
       }      
       .scrolltbody.style2 th:nth-of-type(1),.scrolltbody.style2 td:nth-of-type(1) {
-        width:180px;
+        width:150px;
       }
       .scrolltbody.style2 th:nth-of-type(2),.scrolltbody.style2 td:nth-of-type(2) {
-        width:180px; /* 추가시 임의 조정 */
+        width:110px; /* 추가시 임의 조정 */
       }
       .scrolltbody.style2 th:nth-of-type(3),.scrolltbody.style2 td:nth-of-type(3) {
         width:100px; /* 추가시 임의 조정 */
@@ -718,12 +721,14 @@ $textNormal:#5b5c61;
           }
           &__dong {
             margin-right:2rem;
-            line-height:3rem;
+            line-height:6rem;
             dt {
               font-size:3rem;
               color:#0064b0;
+              float:left;
             }
             dd {
+              float:left;
               font-size:3.2rem;
               font-weight:700;
             }
@@ -807,7 +812,7 @@ $textNormal:#5b5c61;
           }
         }
         .board__eventlist {
-          width:1195px;
+          width:995px;
           height:100%;
           padding: 2rem;          
           h3 {                        
@@ -815,7 +820,7 @@ $textNormal:#5b5c61;
             margin-bottom: 16px;
           }
           .scrolltbody {
-            width:1155px;              
+            width:955px;              
           }
           .scrolltbody th {
             padding: 10px 16px;
@@ -841,10 +846,10 @@ $textNormal:#5b5c61;
             min-height: 820px;
           }
           .scrolltbody th:nth-of-type(1),.scrolltbody td:nth-of-type(1) {
-            width:390px;
+            width:290px;
           }
           .scrolltbody th:nth-of-type(2),.scrolltbody td:nth-of-type(2) {
-            width:390px; /* 추가시 임의 조정 */
+            width:290px; /* 추가시 임의 조정 */
           }
           .scrolltbody th:nth-of-type(3),.scrolltbody td:nth-of-type(3) {
             width:100px; /* 추가시 임의 조정 */
@@ -857,10 +862,10 @@ $textNormal:#5b5c61;
           }
          
           .scrolltbody.style2 th:nth-of-type(1),.scrolltbody.style2 td:nth-of-type(1) {
-            width:490px;
+            width:390px;
           }
           .scrolltbody.style2 th:nth-of-type(2),.scrolltbody.style2 td:nth-of-type(2) {
-            width:490px; /* 추가시 임의 조정 */
+            width:390px; /* 추가시 임의 조정 */
           }
           .scrolltbody.style2 th:nth-of-type(3),.scrolltbody.style2 td:nth-of-type(3) {
             width:100px; /* 추가시 임의 조정 */

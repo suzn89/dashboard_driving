@@ -107,17 +107,20 @@
   margin-right: 10px;
   text-align: right;
   color: #354048;
-  line-height: 15px;
+  line-height: 32px;
 }
 
 .wrap.dashboard .board__top .weather__dong dt {
+  margin-right: 8px;
   font-size: 15px;
   color: #0064b0;
+  float: left;
 }
 
 .wrap.dashboard .board__top .weather__dong dd {
   font-size: 16px;
   font-weight: 700;
+  float: left;
 }
 
 .wrap.dashboard .board__top .weather__items dt {
@@ -324,7 +327,7 @@
 
 .wrap.dashboard .board__eventlist {
   float: left;
-  width: 500px;
+  width: 400px;
   height: 100%;
   padding: 10px;
   background: #f5f5f7;
@@ -340,7 +343,7 @@
 
 .wrap.dashboard .board__eventlist .scrolltbody {
   display: block;
-  width: 480px;
+  width: 380px;
   border-collapse: collapse;
 }
 
@@ -381,11 +384,11 @@
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody th:nth-of-type(1), .wrap.dashboard .board__eventlist .scrolltbody td:nth-of-type(1) {
-  width: 180px;
+  width: 130px;
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody th:nth-of-type(2), .wrap.dashboard .board__eventlist .scrolltbody td:nth-of-type(2) {
-  width: 180px;
+  width: 130px;
   /* 추가시 임의 조정 */
 }
 
@@ -404,11 +407,11 @@
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody.style2 th:nth-of-type(1), .wrap.dashboard .board__eventlist .scrolltbody.style2 td:nth-of-type(1) {
-  width: 180px;
+  width: 150px;
 }
 
 .wrap.dashboard .board__eventlist .scrolltbody.style2 th:nth-of-type(2), .wrap.dashboard .board__eventlist .scrolltbody.style2 td:nth-of-type(2) {
-  width: 180px;
+  width: 110px;
   /* 추가시 임의 조정 */
 }
 
@@ -785,13 +788,15 @@
   }
   .wrap.dashboard .board__top .weather__dong {
     margin-right: 2rem;
-    line-height: 3rem;
+    line-height: 6rem;
   }
   .wrap.dashboard .board__top .weather__dong dt {
     font-size: 3rem;
     color: #0064b0;
+    float: left;
   }
   .wrap.dashboard .board__top .weather__dong dd {
+    float: left;
     font-size: 3.2rem;
     font-weight: 700;
   }
@@ -869,7 +874,7 @@
     padding: 2rem;
   }
   .wrap.dashboard .board__content .board__eventlist {
-    width: 1195px;
+    width: 995px;
     height: 100%;
     padding: 2rem;
   }
@@ -878,7 +883,7 @@
     margin-bottom: 16px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody {
-    width: 1155px;
+    width: 955px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody th {
     padding: 10px 16px;
@@ -904,10 +909,10 @@
     min-height: 820px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody th:nth-of-type(1), .wrap.dashboard .board__content .board__eventlist .scrolltbody td:nth-of-type(1) {
-    width: 390px;
+    width: 290px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody th:nth-of-type(2), .wrap.dashboard .board__content .board__eventlist .scrolltbody td:nth-of-type(2) {
-    width: 390px;
+    width: 290px;
     /* 추가시 임의 조정 */
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody th:nth-of-type(3), .wrap.dashboard .board__content .board__eventlist .scrolltbody td:nth-of-type(3) {
@@ -922,10 +927,10 @@
     width: calc( 375px - 19px);
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:nth-of-type(1), .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:nth-of-type(1) {
-    width: 490px;
+    width: 390px;
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:nth-of-type(2), .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:nth-of-type(2) {
-    width: 490px;
+    width: 390px;
     /* 추가시 임의 조정 */
   }
   .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 th:nth-of-type(3), .wrap.dashboard .board__content .board__eventlist .scrolltbody.style2 td:nth-of-type(3) {
